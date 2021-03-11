@@ -43,12 +43,12 @@ export default {
     return {
       items: [
         {
-          title: 'Home',
+          title: '홈',
           icon: 'home',
           to: { name: 'index' },
         },
         {
-          title: 'Inspire',
+          title: '영감',
           icon: 'lightbulb',
           to: { name: 'inspire' },
         },
