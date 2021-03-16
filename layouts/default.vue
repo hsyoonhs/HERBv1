@@ -7,9 +7,9 @@
     >
       <div class="container is-max-desktop">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <h1 class="title is-4 has-text-weight-bold">HERBv1</h1>
-          </a>
+          <NuxtLink to="/" class="navbar-item">
+            <img src="~assets/logo-text.svg" alt="청원고교" />
+          </NuxtLink>
         </div>
       </div>
     </nav>
