@@ -1,8 +1,12 @@
 .page-enter-active,
-.page-leave-active {
+.page-leave-active,
+.layout-enter-active, 
+.layout-leave-active {
   transition: opacity 0.5s;
 }
 .page-enter,
-.page-leave-to {
+.page-leave-to,
+.layout-enter, 
+.layout-leave-active {
   opacity: 0;
 }
