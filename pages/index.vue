@@ -219,8 +219,13 @@
     <section class="main-content container is-max-desktop">
       <div class="container column is-10">
         <section class="section">
+          <b-message type="is-info" has-icon>
+            개발 단계의 서비스로, 문제가 발생할 수 있습니다.
+            <br />
+            오류 제보 및 건의는 <code>Not defined</code>로 보내주세요.
+          </b-message>
           <div class="columns">
-            <linkedCard to="/meals" title="월간 급식표" icon="food">
+            <linkedCard to="/meals" title="월간 급식" icon="food">
               이번 달의 급식표 확인하기
             </linkedCard>
             <linkedCard
