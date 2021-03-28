@@ -265,15 +265,15 @@ export default {
 <style>
 .st-grade {
   background: #16bffd;
-  background: no-repeat bottom/cover url(~assets/images/banner1.png);
+  background: no-repeat bottom/cover url('~assets/images/banner1.jpg');
 }
 .nd-grade {
   background: #eecda3;
-  background: no-repeat center/cover url(~assets/images/banner2.png);
+  background: no-repeat center/cover url('~assets/images/banner2.jpg');
 }
 .rd-grade {
   background: #4ca1af;
-  background: no-repeat top/cover url(~assets/images/banner3.png);
+  background: no-repeat top/cover url('~assets/images/banner3.jpg');
 }
 .st-grade .hero,
 .nd-grade .hero,
