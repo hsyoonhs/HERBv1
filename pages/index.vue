@@ -225,13 +225,19 @@
             오류 제보 및 건의는 <code>Not defined</code>로 보내주세요.
           </b-message>
           <div class="columns">
-            <linkedCard to="/meals" title="월간 급식" icon="food">
+            <linkedCard
+              to="/meals"
+              title="월간 급식"
+              icon="food"
+              class="main-linkedCard meals"
+            >
               이번 달의 급식표 확인하기
             </linkedCard>
             <linkedCard
               to="/teachers"
               title="교사 시간표 (베타)"
               icon="bulletin-board"
+              class="main-linkedCard teachers"
             >
               선생님의 일과 살펴보기
             </linkedCard>
@@ -290,5 +296,29 @@ export default {
 .nd-grade .field.has-addons,
 .rd-grade .field.has-addons {
   justify-content: center;
+}
+.main-linkedCard .card-header {
+  box-shadow: none;
+}
+.main-linkedCard .card-header-title {
+  color: #ffffff;
+}
+.main-linkedCard .icon {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.main-linkedCard .card-footer {
+  border: none;
+  color: #ffffff;
+}
+.main-linkedCard .card-footer span {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+.main-linkedCard.meals .card {
+  background-image: linear-gradient(135deg, #fb7185, #fdba74);
+}
+.main-linkedCard.teachers .card {
+  background-image: linear-gradient(135deg, #818cf8, #d8b4fe, #f9a8d4);
 }
 </style>

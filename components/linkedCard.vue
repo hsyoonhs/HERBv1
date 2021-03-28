@@ -3,7 +3,7 @@
     <NuxtLink :to="to">
       <div class="card">
         <header class="card-header">
-          <p class="card-header-title has-text-grey">
+          <p class="card-header-title">
             {{ title }}
           </p>
         </header>
