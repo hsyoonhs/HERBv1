@@ -265,18 +265,20 @@ export default {
 <style>
 .st-grade {
   background: #16bffd;
-  background: -webkit-linear-gradient(to right, #cb3066, #16bffd);
-  background: linear-gradient(to right, #cb3066, #16bffd);
+  background: no-repeat bottom/cover url(~assets/images/banner1.png);
 }
 .nd-grade {
   background: #eecda3;
-  background: -webkit-linear-gradient(to right, #ef629f, #eecda3);
-  background: linear-gradient(to right, #ef629f, #eecda3);
+  background: no-repeat center/cover url(~assets/images/banner2.png);
 }
 .rd-grade {
   background: #4ca1af;
-  background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
-  background: linear-gradient(to right, #c4e0e5, #4ca1af);
+  background: no-repeat top/cover url(~assets/images/banner3.png);
+}
+.st-grade .hero,
+.nd-grade .hero,
+.rd-grade .hero {
+  backdrop-filter: blur(0.2rem) saturate(1.5);
 }
 .st-grade .title,
 .nd-grade .title,
