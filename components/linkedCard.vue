@@ -23,7 +23,6 @@
     </NuxtLink>
   </div>
 </template>
-
 <script>
 export default {
   props: {
@@ -42,3 +41,11 @@ export default {
   },
 }
 </script>
+<style scoped>
+.card {
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+</style>
