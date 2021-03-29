@@ -284,7 +284,7 @@ export default {
 .st-grade .hero,
 .nd-grade .hero,
 .rd-grade .hero {
-  backdrop-filter: contrast(4) grayscale(1) brightness(0.4);
+  backdrop-filter: contrast(0.5) grayscale(1) brightness(1.1);
 }
 .st-grade .title,
 .nd-grade .title,
