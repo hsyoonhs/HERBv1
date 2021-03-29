@@ -224,6 +224,40 @@
             <br />
             오류 제보 및 건의는 <code>Not defined</code>로 보내주세요.
           </b-message>
+          <b-collapse :open="false" class="card" animation="slide" aria-id="contentIdForA11y3">
+            <template #trigger="props">
+              <div
+                class="card-header"
+                role="button"
+                aria-controls="contentIdForA11y3">
+                <p class="card-header-title">학교 정보</p>
+                <a class="card-header-icon">
+                  <b-icon
+                    :icon="props.open ? 'menu-up' : 'menu-down'">
+                 </b-icon>
+                </a>
+              </div>
+            </template>
+
+            <div class="card-content">
+              <div class="content">
+                <p>충청북도 청주시 청원구 오창읍 구룡5길 9 (28121)</p>
+                <iframe width="100%" height="300" src="https://maps.google.com/maps?q=%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EA%B5%AC%EB%A3%A15%EA%B8%B8%209&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <ul>
+                  <li><span class="tag is-primary is-light">대표(교무실)</span> <a href="tel:043-717-6500">043-717-6500</a></li>
+                  <li><span class="tag is-warning is-light">FAX</span> <a href="tel:043-717-6509">043-717-6509</a></li>
+                  <li><span class="tag is-warning is-light">행정실</span> <a href="tel:043-717-6573">043-717-6573</a></li>
+                  <li><span class="tag is-success is-light">청심학사(여 · 목령관)</span> <a href="tel:043-717-6591">043-717-6591</a></li>
+                  <li><span class="tag is-success is-light">청심학사(남 · 구룡관)</span> <a href="tel:043-717-6594">043-717-6594</a></li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="card-footer-item" href="https://school.cbe.go.kr/cw-h/M010203/">학교연혁</a>
+              <a class="card-footer-item" href="https://school.cbe.go.kr/cw-h/M010208/">교직원 소개</a>
+              <a class="card-footer-item" href="https://school.cbe.go.kr/cw-h/M010202/">경영방향 · 교육목표</a>
+            </footer>
+          </b-collapse>
           <div class="columns">
             <linkedCard
               to="/meals"
