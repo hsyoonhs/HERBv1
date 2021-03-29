@@ -284,7 +284,7 @@ export default {
 .st-grade .hero,
 .nd-grade .hero,
 .rd-grade .hero {
-  backdrop-filter: blur(0.2rem) saturate(1.5);
+  backdrop-filter: contrast(4) grayscale(1) brightness(0.4);
 }
 .st-grade .title,
 .nd-grade .title,
