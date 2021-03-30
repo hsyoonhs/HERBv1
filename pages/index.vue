@@ -248,7 +248,7 @@
 
                 <div class="card-content">
                   <div class="content">
-                    <p>충청북도 청주시 청원구 오창읍 구룡5길 9 (28121)</p>
+                    <p>충북 청주시 청원구 오창읍 구룡5길 9 (28121)</p>
                     <ul>
                       <li>
                         <span class="tag is-primary is-light"
