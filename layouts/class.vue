@@ -45,7 +45,7 @@
 </template>
 <style scoped>
 .class-header {
-  background: linear-gradient(to bottom, transparent, transparent, #dcdcdc);
+  background: linear-gradient(to bottom, #ff9a9e, #fecfef, #dcdcdc);
 }
 
 .class-header .container {
@@ -59,7 +59,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
   opacity: 0.2;
   filter: grayscale(1);
 }
