@@ -7,29 +7,26 @@
         <h2 class="subtitle has-text-weight-bold">청원고교</h2>
       </div>
     </header>
-    <nav
-      class="navbar header has-shadow is-spaced"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="container is-max-desktop">
-        <a class="navbar-item" href="https://school.cbe.go.kr/cw-h"
-          >청원고등학교</a
-        >
-        <a class="navbar-item" href="https://hcs.eduro.go.kr/">자가진단</a>
-        <a class="navbar-item" href="https://ebsoc.co.kr/">EBS 온라인클래스</a>
-        <a class="navbar-item" href="https://cafe.naver.com/cwhs0501"
-          >네이버 카페</a
-        >
-        <a class="navbar-item" href="https://www.instagram.com/2021_cwhs_/"
-          >학생회 인스타</a
-        >
-        <a
-          class="navbar-item"
-          href="https://www.youtube.com/channel/UC79aL3O7o-mCNQtbl_C4M0g"
-          >학생회 유튜브</a
-        >
-      </div>
+    <nav class="navigation">
+      <ul>
+        <li>
+          <a href="https://school.cbe.go.kr/cw-h"> 청원고등학교 </a>
+        </li>
+        <li>
+          <a href="https://hcs.eduro.go.kr/"> 자가진단 </a>
+        </li>
+        <li>
+          <a href="https://ebsoc.co.kr/"> EBS 온라인클래스 </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/2021_cwhs_/"> 학생회 인스타 </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UC79aL3O7o-mCNQtbl_C4M0g">
+            학생회 유튜브
+          </a>
+        </li>
+      </ul>
     </nav>
 
     <nuxt />
@@ -72,7 +69,48 @@
   text-shadow: 0 0 3px gray;
 }
 
-.navbar .container {
-  justify-content: center;
+.navigation {
+  padding: 0.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid gainsboro;
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  user-select: none;
+  z-index: 1;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation a {
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 4px;
+  color: darkgray;
+  transition: 0.2s;
+}
+
+.navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #000;
+  filter: none;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation {
+    margin: 0;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.navigation::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation {
+  -ms-overflow-style: none;
 }
 </style>
