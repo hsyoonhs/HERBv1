@@ -15,7 +15,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
     "nuxt": "^2.15.4",
-    "nuxt-buefy": "^0.4.4"
+    "nuxt-buefy": "^0.4.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
