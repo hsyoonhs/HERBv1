@@ -33,7 +33,7 @@
       <div class="container column is-10">
         <section class="section">
           <nuxt />
-          <div class="columns">
+          <div class="columns is-multiline">
             <div class="column">
               <div class="card">
                 <header class="card-header">
