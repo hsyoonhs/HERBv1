@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# goormIDE manifest file
+goorm.manifest
