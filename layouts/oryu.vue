@@ -8,7 +8,7 @@
       </div>
       <footer class="footer">
         <div class="content container is-max-desktop">
-          <h2>HERB<sup>v1</sup></h2>
+          <h3>HERB<sup>v1</sup></h3>
           <li><NuxtLink to="/information">정보</NuxtLink></li>
           <li>개발 및 디자인 ⓒ 2021 Hs Yoon</li>
           <li>
