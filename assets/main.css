@@ -13,3 +13,23 @@
 .layout-leave-active {
   opacity: 0;
 }
+
+.footer {
+  color: #b5b5b5;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #b5b5b5;
+  font-weight: bold;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 0 1rem;
+  border-right: 1px solid lightgray;
+}
+
+.footer li:last-child {
+  border: none;
+}

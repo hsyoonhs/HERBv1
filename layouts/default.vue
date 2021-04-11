@@ -17,11 +17,13 @@
     <nuxt />
 
     <footer class="footer">
-      <div class="content container is-max-desktop has-text-grey-light">
-        <span style="float: left">개발 및 디자인 ⓒ 2021 Hs Yoon</span>
-        <span style="float: right">
+      <div class="content container is-max-desktop">
+        <h2>HERB<sup>v1</sup></h2>
+        <li><a href="/information">정보</a></li>
+        <li>개발 및 디자인 ⓒ 2021 Hs Yoon</li>
+        <li>
           저작권이 명시되지 않은 모든 자료는 청원고등학교에 귀속되어 있습니다.
-        </span>
+        </li>
       </div>
     </footer>
   </div>
