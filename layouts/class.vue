@@ -29,7 +29,31 @@
       </ul>
     </nav>
 
-    <nuxt />
+    <section class="main-content container is-max-desktop">
+      <div class="container column is-10">
+        <section class="section">
+          <nuxt />
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">카드 헤더</p>
+                </header>
+                <div class="card-content">카드 콘텐츠</div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">카드 헤더</p>
+                </header>
+                <div class="card-content">카드 콘텐츠</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="content container is-max-desktop">
