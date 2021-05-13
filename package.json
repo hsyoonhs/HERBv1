@@ -14,7 +14,7 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.12.1",
-    "nuxt": "^2.15.5",
+    "nuxt": "^2.15.6",
     "nuxt-buefy": "^0.4.7"
   },
   "devDependencies": {
