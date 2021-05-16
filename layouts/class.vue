@@ -3,6 +3,7 @@
     <header class="class-header">
       <div class="container is-max-desktop">
         <img src="~assets/images/logo.png" />
+        <hr style="width: 5rem;">
         <h1 class="title has-text-weight-bold is-size-1">2학년 예반</h1>
         <h2 class="subtitle has-text-weight-bold">청원고교</h2>
       </div>
@@ -80,13 +81,11 @@
 }
 
 .class-header .container img {
-  position: absolute;
-  height: 70%;
+  width: 5rem;
+  height: 5rem;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.2;
-  filter: grayscale(1);
+  filter: invert(1) grayscale(1) brightness(1.9);
 }
 
 .class-header .container h1,
