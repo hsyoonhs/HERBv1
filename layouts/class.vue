@@ -146,11 +146,10 @@
 
 <script scoped>
 let classCodeInRaw = null;
-let classCode = null;
-if (typeof window !== "undefined") {
+useEffect(() => {
    classCodeInRaw = window.location.pathname;
-   classCode = classCodeInRaw.replace(/[/]/g, '');
-}
+})
+const classCode = classCodeInRaw.replace(/[/]/g, '');
 const classCodeSplitted = classCode.split("");
 const classGrade = classCodeSplitted[0];
 const classNameInNum = classCodeSplitted[1];
