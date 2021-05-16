@@ -170,8 +170,10 @@ else if (classNameInNum == 7)
    className = '국'
 else
    className = '죽'
-
-document.querySelector('.class-header .title').innerHTML = `${classGrade}학년 ${className}반`;
+   
+if (typeof document !== "undefined") {
+   document.querySelector('.class-header .title').innerHTML = `${classGrade}학년 ${className}반`;
+}
 
 window.onload = realtimeDate();
 function realtimeDate(){
@@ -180,7 +182,9 @@ function realtimeDate(){
   const week = new Array('(일)', '(월)', '(화)', '(수)', '(목)', '(금)', '(토)');
   const nowWeek = week[now.getDay()];
   const nowTime = now.toLocaleTimeString();
-  document.querySelector('#realtime .card-content').innerHTML = `${nowDate} ${nowWeek} ${nowTime}`;
+  if (typeof document !== "undefined") {
+     document.querySelector('#realtime .card-content').innerHTML = `${nowDate} ${nowWeek} ${nowTime}`;
+  }
   setTimeout(realtimeDate, 1000);
 }
 
@@ -198,7 +202,9 @@ if(day.length == 1) {
 
 const todayDate = year + month + day;
 
-const section = document.querySelector('#meals .card-content');
+if (typeof document !== "undefined") {
+   const section = document.querySelector('#meals .card-content');
+}
 
 const requestURL = 'https://open.neis.go.kr/hub/mealServiceDietInfo?Type=json&ATPT_OFCDC_SC_CODE=M10&SD_SCHUL_CODE=8000214&MLSV_YMD=' + todayDate;
 
@@ -215,10 +221,12 @@ function showDiet(jsonObj) {
   const diet = jsonObj['mealServiceDietInfo'][1]['row'];
 
   for (var i = 0; i < diet.length; i++) {
-    const myArticle = document.createElement('article');
-    const myH3 = document.createElement('h3');
-    const myList = document.createElement('ul');
-    const myPara = document.createElement('p');
+    if (typeof document !== "undefined") {
+       const myArticle = document.createElement('article');
+       const myH3 = document.createElement('h3');
+       const myList = document.createElement('ul');
+       const myPara = document.createElement('p');
+    }
   
     const DDISH_NM_TEMP = diet[i].DDISH_NM.replace(/(<([^>]+)>)/ig,", ");
     const DDISH_NM = DDISH_NM_TEMP.replace(/([\d.])/ig,"");
@@ -228,7 +236,9 @@ function showDiet(jsonObj) {
 
     const mealList = words;
     for (let j = 0; j < mealList.length; j++) {
-      const listItem = document.createElement('li');
+      if (typeof document !== "undefined") {
+        const listItem = document.createElement('li');
+      }
       listItem.textContent = mealList[j];
       myList.appendChild(listItem);
     }
