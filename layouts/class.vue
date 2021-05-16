@@ -175,17 +175,19 @@ if (typeof document !== "undefined") {
    document.querySelector('.class-header .title').innerHTML = `${classGrade}학년 ${className}반`;
 }
 
-window.onload = realtimeDate();
-function realtimeDate(){
-  const now = new Date();
-  const nowDate = now.toLocaleDateString();
-  const week = new Array('(일)', '(월)', '(화)', '(수)', '(목)', '(금)', '(토)');
-  const nowWeek = week[now.getDay()];
-  const nowTime = now.toLocaleTimeString();
-  if (typeof document !== "undefined") {
-     document.querySelector('#realtime .card-content').innerHTML = `${nowDate} ${nowWeek} ${nowTime}`;
+if (typeof window !== "undefined") {
+  window.onload = realtimeDate();
+  function realtimeDate(){
+    const now = new Date();
+    const nowDate = now.toLocaleDateString();
+    const week = new Array('(일)', '(월)', '(화)', '(수)', '(목)', '(금)', '(토)');
+    const nowWeek = week[now.getDay()];
+    const nowTime = now.toLocaleTimeString();
+    if (typeof document !== "undefined") {
+       document.querySelector('#realtime .card-content').innerHTML = `${nowDate} ${nowWeek} ${nowTime}`;
+    }
+    setTimeout(realtimeDate, 1000);
   }
-  setTimeout(realtimeDate, 1000);
 }
 
 let date = new Date();
