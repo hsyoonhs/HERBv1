@@ -145,7 +145,7 @@
 </style>
 
 <script scoped>
-let classCodeInRaw = 11;
+let classCodeInRaw = "/11";
 if (typeof window !== "undefined") {
    classCodeInRaw = window.location.pathname;
 }
