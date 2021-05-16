@@ -148,8 +148,8 @@
 let classCodeInRaw = null;
 if (typeof window !== "undefined") {
    classCodeInRaw = window.location.pathname;
+   const classCode = classCodeInRaw.replace(/[/]/g, '');
 }
-const classCode = classCodeInRaw.replace(/[/]/g, '');
 const classCodeSplitted = classCode.split("");
 const classGrade = classCodeSplitted[0];
 const classNameInNum = classCodeSplitted[1];
