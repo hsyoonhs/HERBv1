@@ -69,7 +69,9 @@
 </template>
 <style scoped>
 .class-header {
-  background: linear-gradient(to bottom, #ff9a9e, #fecfef, #dcdcdc);
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
 }
 
 .class-header .container {
