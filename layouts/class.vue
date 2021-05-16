@@ -3,7 +3,7 @@
     <header class="class-header">
       <div class="container is-max-desktop">
         <img src="~assets/images/logo.png" />
-        <hr style="width: 5rem;">
+        <hr style="width: 9rem; margin: 1.5rem auto;">
         <h1 class="title has-text-weight-bold is-size-1">2학년 예반</h1>
         <h2 class="subtitle has-text-weight-bold">청원고교</h2>
       </div>
@@ -90,7 +90,7 @@
 
 .class-header .container h1,
 .class-header .container h2 {
-  text-shadow: 0 0 3px gray;
+  color: rgba(255, 255, 255, .6);
 }
 
 .navigation {
